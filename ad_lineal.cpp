@@ -17,7 +17,7 @@ void u_in(double* u,double x_min,double delta_x, int n){
 
 void columnas(double* u,double x_min,double delta_x, int n){
   for (int i=0; i<n; i++){
-    double x = x_min + i;
+    double x = x_min + i*delta_x;
     u_in(u,x_min, delta_x,n);
     cout<< x << "  "<< u[i] <<endl;
   }
